@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invisible - Login</title>
+    <link rel="icon" type="image/x-icon" href="Favicon/assets-favicon-452601365a822699d1d5db718ddf7499d036e8c2f7da69e85160a4d2f83534bd.ico">
+    <link rel="stylesheet" href="">
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Side - Image Section */
+.image-section {
+    width: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Right Side - Form Section */
+.form-section {
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+/* Back to Home Link Styling */
+.home-link {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+.form-section header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    
+}
+
+/* Google Sign-In Button */
+.google-signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 40px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.google-signin img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    color: #888;
+    margin: 20px 0;
+    font-size: 0.8rem;
+}
+
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+        .divider span {
+            padding: 0 10px;
+            white-space: nowrap;
+        }
+
+        /* Form Labels and Input Fields */
+        form {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            color: #444;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .forgot-link {
+            float: right;
+            font-size: 0.8rem;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: none;
+            border-radius: 40px;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Sign up Text */
+        .signup-text {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .signup-text a {
+            color: #333;
+            text-decoration: underline;
+        }
+
+      /* Responsive Layout for Smaller Screens */
+        @media (max-width: 962px) {
+            .image-section {
+                display: none; /* Hide image section on smaller screens */
+            }
+            .form-section {
+                width: 100%; /* Expand form section to fill space */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .google-signin,
+            .divider,
+            .submit-btn,
+            form,
+            .signup-text {
+                max-width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side Image Section -->
+        <div class="image-section">
+            <img src="images/login-image.webp" style="width: 100%; height: 100%; opacity: .4;" alt="Sign in illustration">
+        </div>
+
+        <!-- Right Side Form Section -->
+        <div class="form-section">
+            <header>
+                <h1>Sign in to Invisible</h1>
+            </header>
+
+            <!-- Sign in with Google Button -->
+            <button class="google-signin">
+                <img src="images/google-login.png" alt="Google icon"> Sign in with Google
+            </button>
+
+            <!-- Divider with "or sign in with email" -->
+            <div class="divider">
+                <hr><span>or sign in with email</span><hr>
+            </div>
+
+            <!-- Login Form -->
+            <form action="#">
+                <!-- Username or Email -->
+                <label for="username">Username or Email</label>
+                <input type="text" id="username">
+
+                <!-- Password -->
+                <label for="password">Password <a href="#" class="forgot-link">Forgot?</a></label>
+                <input type="password" id="password">
+
+                <!-- Sign in Button -->
+                <button type="submit" class="submit-btn">Sign in</button>
+            </form>
+
+            <!-- Sign up Link -->
+            <p class="signup-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+
+            <!-- Back to Home Link -->
+            <a href="index.html" class="home-link">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
