@@ -39,7 +39,7 @@ To test mobile responsiveness, use your browser's developer tools to toggle devi
 
 File Structure
 graphql
-Copy code
+
 ├── index.html                   # Homepage
 ├── login.html                   # Login page
 ├── signup.html                  # Sign-up page
