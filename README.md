@@ -1,7 +1,7 @@
 # Invisible
 
 Dribbble-Inspired Website Clone
-This project is a responsive, single-page website inspired by Dribbble's design, built with HTML, CSS, and JavaScript. The website mimics a portfolio platform, featuring sections for showcasing designers, portfolios, login and sign-up pages, and more. It's fully responsive and adapts across various screen sizes.
+This project is a responsive, single-page website inspired by Dribbble's design, built with HTML, CSS, and JavaScript. The website mimics a portfolio platform, featuring sections showcasing designers, portfolios, login and sign-up pages, and more. It's fully responsive and adapts across various screen sizes.
 
 Table of Contents
 Features
@@ -12,6 +12,7 @@ File Structure
 Contributions
 License
 Features
+
 Responsive Design: Adapts across desktop, tablet, and mobile devices.
 Navbar with Dropdown and Toggle: A responsive navigation bar that collapses on smaller screens, featuring dropdown menus and toggle functionality.
 Search Functionality: Search bar with an adaptive layout that shows an icon on smaller screens.
@@ -22,9 +23,9 @@ Technologies Used
 HTML5: Structure and layout.
 CSS3: Styling, flexbox, and grid for responsiveness, transitions, and animations.
 JavaScript: Toggle functionality, dropdown behavior, and interactive features.
+
 Installation
 Clone the Repository:
-bash
 git clone https://github.com/Chukwuwemeka/invisible.git
 Navigate to the Project Directory:
 cd invisible
@@ -39,7 +40,6 @@ To test mobile responsiveness, use your browser's developer tools to toggle devi
 
 File Structure
 graphql
-
 ├── index.html                   # Homepage
 ├── login.html                   # Login page
 ├── signup.html                  # Sign-up page
