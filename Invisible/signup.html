@@ -5,111 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invisible - Sign Up</title>
     <link rel="icon" type="image/x-icon" href="Favicon/assets-favicon-452601365a822699d1d5db718ddf7499d036e8c2f7da69e85160a4d2f83534bd.ico">
-    <link rel="stylesheet" href="">
     <style>
-        /* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-/* Container */
-.signup-container {
-    display: flex;
-    height: 100vh;
-}
+        .signup-container {
+            display: flex;
+            height: auto;
+        }
 
-/* Left Side - Image Section */
-.image-section {
-    width: 31%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f2f2;
-}
+        .image-section {
+            width: 31%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f2f2f2;
+        }
 
-.image-section img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+        .image-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
 
-/* Right Side - Form Section */
-.form-section {
-    width: 69%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
+        .form-section {
+            width: 69%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
 
-/* Back to Home Link Styling */
-.home-link {
-    display: block;
-    font-size: 0.9rem;
-    color: #333;
-    margin-top: 40px;
-    text-decoration: none;
-}
+        .home-link {
+            display: block;
+            font-size: 0.9rem;
+            color: #333;
+            margin-top: 40px;
+            text-decoration: none;
+        }
 
-.home-link:hover {
-    text-decoration: underline;
-}
+        .home-link:hover {
+            text-decoration: underline;
+        }
 
-.form-section header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: left;
-}
+        .form-section header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: left;
+        }
 
-/* Google Sign-In Button */
-.google-signin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 40px;
-    border: 1px solid #ddd;
-    background-color: white;
-    margin-bottom: 20px;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
+        .google-signin {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 40px;
+            border: 1px solid #ddd;
+            background-color: white;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
 
-.google-signin img {
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
-}
+        .google-signin img {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
 
-/* Divider */
-.divider {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 300px;
-    color: #888;
-    margin: 20px 0;
-    font-size: 0.8rem;
-}
+        .divider {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
+            color: #888;
+            margin: 20px 0;
+            font-size: 0.8rem;
+        }
 
-.divider hr {
-    flex: 1;
-    border: none;
-    border-top: 1px solid #ddd;
-}
+        .divider hr {
+            flex: 1;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
 
         .divider span {
             padding: 0 10px;
             white-space: nowrap;
         }
 
-        .email-btn {
+        form {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            color: #444;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input[type="text"],input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .submit-btn {
             width: 100%;
             max-width: 400px;
             padding: 20px;
@@ -121,13 +136,14 @@
             cursor: pointer;
             margin-top: 20px;
         }
+
         .terms { 
             font-size: 0.7rem;
             color: #888;
-            margin-top: 40px;
+            margin-top: 20px;
             text-align: center;
         }
-        /* Sign in Text */
+
         .signin-text {
             font-size: 0.9rem;
             color: #888;
@@ -140,13 +156,12 @@
             text-decoration: underline;
         }
 
-      /* Responsive Layout for Smaller Screens */
         @media (max-width: 962px) {
             .image-section {
-                display: none; /* Hide image section on smaller screens */
+                display: none;
             }
             .form-section {
-                width: 100%; /* Expand form section to fill space */
+                width: 100%;
             }
         }
 
@@ -169,36 +184,38 @@
 </head>
 <body>
     <div class="signup-container">
-        <!-- Left Side Image Section -->
         <div class="image-section">
             <img src="images/signup-image.webp" style="height: 100%; width: 100%; opacity: .6;" alt="Sign up illustration">
         </div>
-
-        <!-- Right Side Form Section -->
         <div class="form-section">
             <header>
                 <h1>Sign Up to Invisible</h1>
             </header>
-
-            <!-- Sign in with Google Button -->
             <button class="google-signin">
-                <img src="images/google-login.png" alt="Google icon"> Sign in with Google
+                <img src="images/google-login.png" alt="Google icon"> Sign up with Google
             </button>
-
-            <!-- Divider with "or sign in with email" -->
             <div class="divider">
-                <hr><span>or sign in with email</span><hr>
+                <hr><span>or sign up with email</span><hr>
             </div>
-            <button class="email-btn">
-                 Continue with email
-            </button>
-            <p class="terms">By creating an account you agree with our <span style="text-decoration: underline;"> Terms of Service</span>, <span style="text-decoration: underline;"> Privacy Policy</span>, and our default <span style="text-decoration: underline;"> Notification Settings</span>.</p>
-            <!-- Sign up Link -->
-            <p class="signin-text">Already have an account? <a href="login.html">Sign in</a></p>
+            <p id="message"></p>
+            <form id="signupForm" onsubmit="signUp(event)">
+                <label for="username">Username</label>
+                <input type="text" id="username" required>
 
-            <!-- Back to Home Link -->
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+            <p class="terms">By creating an account you agree with our <span style="text-decoration: underline;"> Terms of Service</span>, <span style="text-decoration: underline;"> Privacy Policy</span>, and our default <span style="text-decoration: underline;"> Notification Settings</span>.</p>
+            
+            <p class="signin-text">Already have an account? <a href="login.html">Login here</a></p>
             <a href="index.html" class="home-link">← Back to Home</a>
         </div>
     </div>
+    <script src="js/signup.js"></script>
 </body>
 </html
