@@ -26,7 +26,7 @@ JavaScript: Toggle functionality, dropdown behavior, and interactive features.
 
 Installation
 Clone the Repository:
-git clone https://github.com/Chukwuwemeka/invisible.git
+git clone https://github.com/ChukwuwemekaAgu/invisible.git
 Navigate to the Project Directory:
 cd invisible
 Open index.html in a browser to view the website.
