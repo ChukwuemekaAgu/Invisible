@@ -38,20 +38,6 @@ Sign in and register using either Google or email.
 Explore continuously scrolling galleries.
 To test mobile responsiveness, use your browser's developer tools to toggle device mode or view on various screen sizes.
 
-File Structure
-graphql
-├── index.html                   # Homepage
-├── login.html                   # Login page
-├── signup.html                  # Sign-up page
-├── images/                      # Folder for images and icons
-├── css/
-│   ├── styles.css                # Main stylesheet
-├── js/
-│   └── script.js                # JavaScript for interactive features
-└── README.md                    # Project documentation
-Contributions
-Feel free to contribute by submitting a pull request. Please ensure code quality by testing across different screen sizes.
-
 License
 This project is open source and available under the MIT License.
 
