@@ -1,7 +1,9 @@
 # Invisible
 
 Dribbble-Inspired Website Clone
-This project is a responsive, single-page website inspired by Dribbble's design, built with HTML, CSS, and JavaScript. The website mimics a portfolio platform, featuring sections showcasing designers, portfolios, login and sign-up pages, and more. It's fully responsive and adapts across various screen sizes.
+This project is a responsive, single-page website inspired by Dribbble's design, built with HTML, CSS, and JavaScript.
+The website mimics a portfolio platform, featuring sections showcasing designers, portfolios, login and sign-up pages, and more.
+It's fully responsive and adapts across various screen sizes.
 
 Table of Contents
 Features
